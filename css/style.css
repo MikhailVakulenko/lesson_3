@@ -1,0 +1,314 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.bg-image {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  opacity: 0.25;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background-color: rgb(26, 171, 250);
+  background-image: url(../images/img11.jpg), url(../images/img14.jpg);
+  background-repeat: no-repeat;
+  background-position: 98% 30%, 50% 50%;
+  background-size: 5%, cover;
+}
+
+.bg-image-gallery {
+  background-color: black;
+  background-image: url(../images/img6.jpg);
+  background-repeat: repeat;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+}
+
+.bg-overley {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+  opacity: 0.25;
+}
+
+.container {
+  width: min(100% - 40px, 1080px);
+  margin-inline: auto;
+  padding: 20px;
+}
+
+.content {
+  background-color: gray;
+  min-height: 500px;
+}
+
+h1,
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #91e20d;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1rem;
+  font-weight: 500;
+  }
+
+strong {
+  color: #91e20d;
+  font-weight: 900;
+}
+
+.img {
+  display: block;
+  margin: 0 auto;
+}
+
+.header,
+.footer {
+  background-color: #008cff;
+  position: fixed;
+  width: 100%;
+}
+
+.header {
+  top: 0;
+}
+
+.nav {}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-menu-item-link {
+  text-transform: uppercase;
+  background-color: #91e20d;
+  color: black;
+  padding: 10px;
+  display: block;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 7px;
+  transition: 0.4s;
+}
+
+.nav-menu-item-link:hover {
+  background-color: gold;
+  transform: scale(1.2) translateY(-10px);
+  box-shadow: 0 5px 15px black;
+}
+
+.anchor {
+  position: relative;
+}
+
+.anchor>span {
+  position: absolute;
+  top: -100px;
+}
+
+.main {
+  margin-top: 120px;
+  margin-bottom: 100px;
+}
+
+.footer {
+  bottom: 0;
+  text-align: center;
+}
+
+.articles h2 a {
+  color: gold;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: 3px solid;
+}
+
+.short {
+  color: black;
+  background-color: gold;
+  padding: 0 20px;
+}
+
+.more {
+  text-decoration-line: underline;
+}
+
+.more:hover {
+  color: red;
+  text-decoration-line: none;
+}
+
+.comments {
+  color: gray;
+  background-color: #91e20d;
+  padding: 0 20px;
+}
+
+.first-letter p::first-letter {
+  color: #91e20d;
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.catalog {
+  list-style-type: none;
+  padding: 0;
+}
+
+.flowers,
+.toys,
+.books {
+  background-color: #91e20d;
+  list-style-position: inside;
+  padding: 20px;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.flowers {
+  list-style-image: url("../images/red_flower.png");
+}
+
+.toys {
+  list-style-image: url("../images/internet.png");
+}
+
+.books {
+  list-style-image: url("../images/address_book.png");
+}
+
+.product,
+.product-new {
+  list-style: url("../images/smile_1.png");
+  list-style-position: inside;
+  padding: 10px;
+  margin: 10px;
+  background-color: gray;
+  width: 400px;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.product-new::after {
+  content: "new";
+  background-color: gold;
+  color: rgb(17, 0, 255);
+  font-weight: 500;
+  margin: 10px;
+  padding: 5px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 20px;
+}
+.section-gallery {
+  text-align: center;
+  }
+
+.border-decorated {
+  border-color: #91e20d;
+  border-style: solid;
+  border-width: 2px;
+}
+
+.border-decorated:hover {
+  border-color: transparent;
+}
+
+fieldset {
+  max-width: 500px;
+  margin: 25px auto;
+  background-color: #a2a8a3;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+input[type="file"] {
+  padding: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: auto;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px 20px;
+  resize: vertical;
+  min-height: 75px;
+  max-height: 33vh;
+}
+
+.form-group:not(:first-of-type) {
+  margin: 15px 0 5px;
+}
+
+.form-group-sm {
+  margin: 10px 0 5px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.btn:hover {
+  background-color: gold;
+}
+
+.form-group-sm:hover {
+  outline: 3px dotted gold;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}

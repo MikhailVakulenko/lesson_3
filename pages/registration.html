@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Регистрация</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <div class="bg-image"></div>
+  <div class="bg-overley"></div>
+
+  <header class="header">
+    <div class="container">
+
+      <nav>
+        <ul class="nav-menu">
+          <li class="nav-menu-item"><a class="nav-menu-item-link" href="../index.html">Главная</a></li>
+          <li class="nav-menu-item"><a class="nav-menu-item-link" href="articles.html">Статьи</a></li>
+          <li class="nav-menu-item"><a class="nav-menu-item-link" href="catalog.html">Каталог</a></li>
+          <li class="nav-menu-item"><a class="nav-menu-item-link" href="contacts.html">Контакты</a></li>
+          <li class="nav-menu-item"><a class="nav-menu-item-link" href="page-nav.html">Навигация</a></li>
+          <li class="nav-menu-item"><a class="nav-menu-item-link" href="gallery.html">Галерея</a></li>
+          <li class="nav-menu-item"><a class="nav-menu-item-link" href="registration.html">Регистрация</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container content">
+
+      <h1>Регистрация</h1>
+
+      <h2>Форма регистрации</h2>
+
+      <div>
+        <form action="https://tests.fomenko.top/echo/index.php" method="get">
+
+          <fieldset>
+            <legend>Основная информация</legend>
+
+            <div class="form-group">
+              <label for="name1">Имя</label>
+              <input class="capitalize" type="text" name="name" id="name1" placeholder="Введите имя" tabindex="1">
+            </div>
+
+            <div class="form-group">
+              <label for="surname">Фамилия</label>
+              <input class="capitalize" type="text" name="surname" id="surname" placeholder="Введите фамилию" tabindex="2">
+            </div>
+
+            <div class="form-group">
+              <label for="foto">Добавьте фотографию</label>
+              <input type="file" name="foto" id="foto" tabindex="3">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Адрес электронной почты</label>
+              <input type="email" name="email" id="email" placeholder="Введите email" tabindex="4">
+            </div>
+
+            <div class="form-group">
+              <label for="website">Адрес сайта</label>
+              <input type="url" name="website" id="website" value="https://mysite.name" tabindex="5">
+            </div>
+
+            <div class="form-group">
+              <label for="userpas">Пароль</label>
+              <input type="password" name="userpas" id="userpas" placeholder="Введите пароль" tabindex="6">
+            </div>
+
+          </fieldset>
+
+          <fieldset>
+            <legend>Выберите пол</legend>
+
+            <div class="form-group-sm">
+              <input type="radio" name="gender" id="male" value="male" tabindex="7">
+              <label for="male">Мужской</label>
+            </div>
+            <div class="form-group-sm">
+              <input type="radio" name="gender" id="female" value="female" tabindex="8">
+              <label for="female">Женский</label>
+            </div>
+
+          </fieldset>
+
+          <fieldset>
+            <legend>Выберите предпочитаемую кухню</legend>
+
+            <div class="form-group-sm">
+              <input type="checkbox" name="kitchen-ua" id="ua" value="ua" checked tabindex="9">
+              <label for="ua">Украинская</label>
+            </div>
+            <div class="form-group-sm">
+              <input type="checkbox" name="kitchen-uz" id="uz" value="uz" tabindex="10">
+              <label for="uz">Узбекская</label>
+            </div>
+            <div class="form-group-sm">
+              <input type="checkbox" name="kitchen-it" id="it" value="it" tabindex="11">
+              <label for="it">Итальянская</label>
+            </div>
+            <div class="form-group-sm">
+              <input type="checkbox" name="kitchen-vegan" id="vegan" value="vegan" tabindex="12">
+              <label for="vegan">Вегетарианская</label>
+            </div>
+
+          </fieldset>
+
+          <fieldset>
+            <legend>Детальная информация</legend>
+
+            <div class="form-group">
+              <label for="txt">О себе</label>
+              <textarea name="txt" id="txt" placeholder="Дополните информацию" tabindex="13"></textarea>
+            </div>
+
+          </fieldset>
+
+          <fieldset>
+            <legend>Кнопки управления формой</legend>
+
+            <div class="form-group">
+              <button class="btn" type="submit" tabindex="14">Зарегистрироваться</button>
+            </div>
+            <div class="form-group">
+              <button class="btn" type="reset" tabindex="15">Очистить форму</button>
+            </div>
+
+          </fieldset>
+
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      &copy;
+    </div>
+  </footer>
+
+</body>
+
+</html>
